@@ -1,0 +1,118 @@
+body {
+  width: 100%;
+  font-size: 14px;
+  padding: 0px 104px 0px 88px;
+  margin : 0px;
+  background: rgba(201,208,255, 0.1) url('checkout-preview_2x.png') no-repeat;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 4px;
+  width: 120px;
+  height: 36px;
+  outline: none;
+  color: #a5abc5;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 6px;
+}
+
+
+
+/*Header block*/
+
+header {
+  padding: 60px 0;
+}
+
+header button {
+  color: #a5abc5;
+  border: 1px solid #c9d0e1;
+  background-color: transparent;
+}
+
+header .sign-in-btn {
+  float:right;
+}
+
+
+
+/*Main block*/
+
+main {
+  background-color: #fff;
+  border: 1px solid #c9d0e1;
+  border-radius: 2px;
+}
+
+main a {
+  color: #6e768f;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: normal;
+}
+
+.form-header {
+  border-bottom: 1px solid #c9d0e1;
+}
+
+.order-details {
+  padding: 15px;
+  display: inline-block;
+  width: 70%;
+  float: left;
+}
+
+.order-details .table-wrapper {
+  display: inline-block;
+  float: left;
+  width: 80%;
+}
+
+.order-details table {
+  text-align: left;
+}
+
+.order-details th, .order-details caption {
+  color: #6e768f;
+  height: 30px;
+  vertical-align: middle;
+  font-weight: 600;
+  text-align: left;
+}
+
+.order-details td {
+  color: #a5abc5;
+  width: 130px;
+}
+
+.help-contacts {
+  padding: 10px 30px 60px;
+  border-left: 1px solid #c9d0e1;
+  display: inline-block;
+  width: 30%;
+}
+
+.help-contacts p {
+  font-size: 12px;
+}
+
+main button {
+  color: #a4abc4;
+  border: 1px solid #d7d8e0;
+  background-color: #f7f7fa;
+}
+
+main button[type='submit'] {
+  border: 1px solid #54aca9;
+  background-color: #5fcac6;
+  color: #fff;
+}
+
+
+
