@@ -18,19 +18,19 @@ const jsClassesPattern = /^js-[^-\s]+/i
 
 
 const cutBootstrap = tree => tree
-    .match({attrs: {class: true}}, node => {
+  .match({attrs: {class: true}}, node => {
 
-      let classesArray = node.attrs.class.split(' ')
-        .filter(item => !bootstrapClassesPattern.test(item))
+    let classesArray = node.attrs.class.split(' ')
+      .filter(item => !bootstrapClassesPattern.test(item))
 
-      node.attrs.class = classesArray.join(' ')
-      
-      if(!node.attrs.class) {
-        delete node.attrs.class
-      }
+    node.attrs.class = classesArray.join(' ')
+    
+    if(!node.attrs.class) {
+      delete node.attrs.class
+    }
 
-      return node
-    })
+    return node
+  })
 
 const replaceJS = tree => tree
   .match({attrs: {class: true}}, node => {
