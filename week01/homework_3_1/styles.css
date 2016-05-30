@@ -1,25 +1,28 @@
+html {
+  background: rgba(201,208,255, 0.1) url('checkout-preview_2x.png') no-repeat;
+  background-size: cover;
+}
 body {
   width: 100%;
   font-size: 14px;
-  padding: 0px 104px 0px 88px;
+  padding: 0px 133px;
   margin : 0px;
-  background: rgba(201,208,255, 0.1) url('checkout-preview_2x.png') no-repeat;
-  background-size: cover;
 }
 
 * {
   box-sizing: border-box;
 }
 
-button {
+a[role=button], button {
   border-radius: 4px;
-  width: 120px;
-  height: 36px;
+  height: 46px;
   outline: none;
+  padding: 16px 36px;
+  text-align: center;
   color: #a5abc5;
   font-weight: 600;
+  font-size: 10px;
   cursor: pointer;
-  margin: 6px;
 }
 
 
@@ -27,19 +30,17 @@ button {
 /*Header block*/
 
 header {
-  padding: 60px 0;
+  padding: 80px 0 78px;
+  display: flex;
+  justify-content: space-between;
 }
 
-header button {
+header a {
+  margin: 0;
   color: #a5abc5;
   border: 1px solid #c9d0e1;
   background-color: transparent;
 }
-
-header .sign-in-btn {
-  float:right;
-}
-
 
 
 /*Main block*/
@@ -47,10 +48,11 @@ header .sign-in-btn {
 main {
   background-color: #fff;
   border: 1px solid #c9d0e1;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 main a {
+  margin: 6px;
   color: #6e768f;
   font-weight: 400;
   text-decoration: none;
